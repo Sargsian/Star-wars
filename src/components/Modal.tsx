@@ -68,13 +68,13 @@ export const Modal = ({ children, isLoading, character }: Props) => {
               <div className="mt-3 flex flex-col gap-3 sm:block">
                 <div className="mb-0 flex max-w-[256px] flex-col rounded-lg bg-white p-5 sm:mb-[76px]">
                   <span>
-                    {t("eyeColor")} - {character?.eye_color}
+                    {t("eye color")} - {character?.eye_color}
                   </span>
                   <span>
-                    {t("skinColor")} - {character?.skin_color}
+                    {t("skin color")} - {character?.skin_color}
                   </span>
                   <span>
-                    {t("hairColor")} - {character?.hair_color}
+                    {t("hair color")} - {character?.hair_color}
                   </span>
                 </div>
                 <div className="flex gap-6 self-end">

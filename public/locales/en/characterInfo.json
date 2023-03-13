@@ -1,9 +1,9 @@
 {
   "male": "male",
   "female": "female",
-  "eyeColor": "eye color",
-  "skinColor": "skin color",
-  "hairColor": "hair color",
+  "eye color": "eye color",
+  "skin color": "skin color",
+  "hair color": "hair color",
   "height": "height",
   "mass": "mass"
 }

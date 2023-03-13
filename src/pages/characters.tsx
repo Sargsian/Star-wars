@@ -45,12 +45,11 @@ const Characters: NextPageWithLayout = () => {
   };
   const { t } = useTranslation("characters");
 
-  
   const { data, isLoading, isError, isFetching } = useQuery({
     queryKey: ["characters", page],
     queryFn: () => fetchCharacters(page),
   });
-  
+
   const filteredData = data?.results.filter((character) => {
     // non expensive calculation so no need for optimization
     if (filterValue === "all") return character;
@@ -59,6 +58,7 @@ const Characters: NextPageWithLayout = () => {
 
   const switchLanguage = () => {
     const language = router.locale === "en" ? "wk" : "en";
+    // eslint-disable-next-line
     router.push(
       { pathname: router.pathname, query: router.query },
       router.asPath,
@@ -69,7 +69,7 @@ const Characters: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>{`${t("title")} ${ charNum ? '- ' + charNum : ''}`}</title>
+        <title>{`${t("title")} ${charNum ? `- ${charNum}` : ""}`}</title>
       </Head>
       <div className="relative flex min-h-[calc(100vh-93px)] w-full flex-col bg-[linear-gradient(180deg,#FFFFFF_30.32%,#F5F5F5_100%)] pb-12">
         <span className="absolute right-1/2 top-7 translate-x-[50%] sm:right-40 sm:translate-x-0">
@@ -154,7 +154,7 @@ const Characters: NextPageWithLayout = () => {
         )}
         <button
           onClick={switchLanguage}
-          className="fixed right-5 bottom-5 sm:right-[75px] sm:bottom-[75px] active:scale-95 transition"
+          className="fixed right-5 bottom-5 transition active:scale-95 sm:right-[75px] sm:bottom-[75px]"
         >
           <Image
             src="/switchButton.svg"

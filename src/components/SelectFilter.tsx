@@ -36,11 +36,11 @@ export const SelectFilter = ({ setFilterValue, defaultValue }: Props) => {
         >
           <Select.Viewport>
             <Select.Group className="flex w-[135px] flex-col justify-center gap-3 p-[5px]">
-              <SelectItem value={filterValues.brown}>{t('brown')}</SelectItem>
-              <SelectItem value={filterValues.red}>{t('red')}</SelectItem>
-              <SelectItem value={filterValues.blue}>{t('blue')}</SelectItem>
-              <SelectItem value={filterValues.white}>{t('white')}</SelectItem>
-              <SelectItem value={filterValues.all}>{t('all')}</SelectItem>
+              <SelectItem value={filterValues.brown}>{t("brown")}</SelectItem>
+              <SelectItem value={filterValues.red}>{t("red")}</SelectItem>
+              <SelectItem value={filterValues.blue}>{t("blue")}</SelectItem>
+              <SelectItem value={filterValues.white}>{t("white")}</SelectItem>
+              <SelectItem value={filterValues.all}>{t("all")}</SelectItem>
             </Select.Group>
           </Select.Viewport>
         </Select.Content>
@@ -82,7 +82,6 @@ const Overlay = ({ open }: { open: boolean }) => {
       };
     }
     setVisible(true);
-    // return () => clearTimeout(timer)
   }, [open]);
 
   return visible ? (
