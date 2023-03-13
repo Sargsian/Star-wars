@@ -26,7 +26,10 @@ const Custom404 = () => {
   return (
     <>
       <Head>
-        <title>{t('title')}</title>
+        <title>{t('title')}
+        <link rel="preload" href="/custom404.svg" as="image" />
+        
+        </title>
       </Head>
       <div className="h-screen w-full bg-[#17002F] py-32 sm:p-32">
         <div className="relative mx-auto h-full w-[100%]">
