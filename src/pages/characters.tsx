@@ -97,7 +97,7 @@ const Characters: NextPageWithLayout = () => {
         {!isError && (
           <div className="px-4 md:px-16 xl:px-[150px]">
             <div className="">
-              <label className="mr-4">{t("filterName")}</label>
+              <label className="mr-4">{t("filter name")}</label>
               <SelectFilter
                 defaultValue={filterValue}
                 setFilterValue={setFilterValue}
