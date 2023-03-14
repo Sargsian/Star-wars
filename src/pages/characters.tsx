@@ -73,7 +73,7 @@ const Characters: NextPageWithLayout = () => {
         <link rel="preload" href="/female.svg" as="image" />
         <link rel="preload" href="/male.svg" as="image" />
         <link rel="preload" href="/non-binary.svg" as="image" />
-        <link rel="preload" href="/public/close.svg" as="image" />
+        <link rel="preload" href="/close.svg" as="image" />
       </Head>
       <div className="relative flex min-h-[calc(100vh-93px)] w-full flex-col bg-[linear-gradient(180deg,#FFFFFF_30.32%,#F5F5F5_100%)] pb-12">
         <span className="absolute right-1/2 top-7 translate-x-[50%] sm:right-40 sm:translate-x-0">
